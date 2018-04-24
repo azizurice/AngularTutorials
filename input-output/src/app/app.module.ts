@@ -9,6 +9,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { CounterComponent } from './counter/counter.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AboutComponent } from './about/about.component';
     ParentComponent,
     ChildComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

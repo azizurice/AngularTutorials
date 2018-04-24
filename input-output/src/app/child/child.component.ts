@@ -1,4 +1,4 @@
-import { Component,Input, OnInit } from '@angular/core';
+import { Component,Input,Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,12 +7,20 @@ import { Component,Input, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-@Input() dataComeFromParent:number;
+
+// To receive data from parent component, we need just input decorator
+@Input() dataComeFromParent:Number;
 @Input() typing:string;
+
+// To send data to the parent component, we need
+// output decorator and EventEmitter
+
+@Output() change: EventEmitter<Number> = new EventEmitter<Number>();
 
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

@@ -14,4 +14,5 @@ export class ParentComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

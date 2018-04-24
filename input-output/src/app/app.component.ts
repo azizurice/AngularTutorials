@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  myCount: number = 10;
+ countChange(event) {
+   //this.myCount = event;
+ }
 }

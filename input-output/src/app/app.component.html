@@ -12,5 +12,15 @@
   <li><a routerLink="about">About</a> </li>
 </ul>
 
+<div style="text-align:center">
+<h1> Parent Child Interaction(Input and Output decorator): First Example </h1>
+<div class="app">
+    Parent: {{ myCount }}
+    <app-counter
+      [count]="myCount"
+      (change)="countChange($event)">
+    </app-counter>
+  </div>
+</div>
 <!-- <app-home></app-home> -->
 <router-outlet></router-outlet>

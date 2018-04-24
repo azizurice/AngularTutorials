@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    You are at parent component area
+  </h1>
+  <p>Send my age from this(parent component) to my child component</p>
+  <form >
+    <input type="text" name="item" [(ngModel)]="whatIamTyping">
+      <br>
+      <span>{{whatIamTyping}}</span>
+  </form>
+
+
+  <app-child [dataComeFromParent] ="myAge"
+             [typing]="whatIamTyping">
+   </app-child>
+
+</div>
